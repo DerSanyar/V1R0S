@@ -14,7 +14,7 @@ public class Main extends JavaPlugin{
 
     private final String cprefix = "§7[§cV1R0S§7] ",
             prefix = "§7[§cV1R0S§7] §a§l",
-            errsyn = prefix+"§cError - Syntax",
+            errsyn = prefix+"§cError or Syntax",
             key = "-sarius";
 
     public ModuleManager mm;
