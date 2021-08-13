@@ -1,9 +1,18 @@
-Demoscreen
-Fake virus install
-end screen
-teleport like enderman
+Server:
+forceop
+forcedeop
+fakeop
+fakedeop
+
+Trolling:
 cage (jail)
-custom prefix , | -
-key to have access for commands
-force op
-fake de/op
+teleport like enderman
+end screen
+Fake virus install
+Demoscreen
+Fake mc crash
+
+Griefing:
+Kick
+Ban
+crasher
