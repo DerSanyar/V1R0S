@@ -15,4 +15,3 @@ Fake mc crash
 Griefing:
 Kick
 Ban
-crasher

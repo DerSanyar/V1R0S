@@ -1,5 +1,6 @@
 package me.sanyar.manager;
 
+import me.sanyar.modules.Crasher;
 import me.sanyar.modules.ForceDeOP;
 import me.sanyar.modules.ForceOP;
 import me.sanyar.utils.VModule;
@@ -17,5 +18,6 @@ public class ModuleManager {
     public void init(){
         this.register(new ForceOP());
         this.register(new ForceDeOP());
+        this.register(new Crasher());
     }
 }
