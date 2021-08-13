@@ -1,0 +1,9 @@
+Demoscreen
+Fake virus install
+end screen
+teleport like enderman
+cage (jail)
+custom prefix , | -
+key to have access for commands
+force op
+fake de/op

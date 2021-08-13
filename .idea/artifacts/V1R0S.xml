@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="V1R0S">
+    <output-path>$PROJECT_DIR$/../../Minecraft 1.8.8 Server/plugins</output-path>
+    <root id="archive" name="V1R0S.jar">
+      <element id="module-output" name="V1R0S" />
+    </root>
+  </artifact>
+</component>
