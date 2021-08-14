@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 public class Gamemode extends VModule {
 
     public Gamemode() {
-        super("gamemode", "Switch gamemode");
+        super("gm", "Switch gamemode");
     }
 
     @Override
@@ -20,25 +20,25 @@ public class Gamemode extends VModule {
             try {
                 int mode = Integer.parseInt(args[1]);
 
-                switch(mode){
-                    case 0:
+                switch(args[1]){
+                    case "0":
 
                         player.setGameMode(GameMode.SURVIVAL);
                         player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
 
                         break;
-                    case 1:
+                    case "1":
 
                         player.setGameMode(GameMode.CREATIVE);
                         player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
 
                         break;
-                    case 2:
+                    case "2":
 
                         player.setGameMode(GameMode.ADVENTURE);
                         player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
                         break;
-                    case 3:
+                    case "3":
                         player.setGameMode(GameMode.SPECTATOR);
                         player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
 
@@ -46,10 +46,10 @@ public class Gamemode extends VModule {
 
                     default:
                         player.sendMessage(Main.getInstance().getErrsyn());
+                        break;
 
                 }
-            }catch (Exception e){
-                player.sendMessage(Main.getInstance().getErrsyn());
+            }catch (Exception ignored){
             }
 
 
@@ -61,8 +61,8 @@ public class Gamemode extends VModule {
             if(target != null) {
                 switch (args[1]) {
                     case "0":
-                        target.setGameMode(GameMode.SURVIVAL);
                         player.sendMessage(Main.getInstance().getPrefix() + "§aYou switched the gamemode from §2" + target.getName() + " §ato §6" + player.getGameMode().name());
+                        target.setGameMode(GameMode.SURVIVAL);
 
                         break;
                     case "1":

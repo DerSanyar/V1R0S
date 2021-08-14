@@ -1,12 +1,9 @@
 Server:
-gamemode
-vanish
 fakeop
 fakedeop
 
 Trolling:
 fake bugging
-cage (jail)
 teleport like enderman
 end screen
 Fake virus install
@@ -18,5 +15,4 @@ Kick
 Ban
 
 others:
-get a message who has permission to v1r0s
 credits

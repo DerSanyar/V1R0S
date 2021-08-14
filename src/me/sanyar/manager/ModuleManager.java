@@ -22,5 +22,7 @@ public class ModuleManager {
         this.register(new GetVanishedPlayers());
         this.register(new Gamemode());
         this.register(new Cage());
+        this.register(new FakeOP());
+        this.register(new FakeDeOP());
     }
 }
