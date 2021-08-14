@@ -1,6 +1,5 @@
 Server:
-fakeop
-fakedeop
+whitelist set true/false
 
 Trolling:
 fake bugging

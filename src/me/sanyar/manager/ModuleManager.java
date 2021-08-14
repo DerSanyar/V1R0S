@@ -24,5 +24,6 @@ public class ModuleManager {
         this.register(new Cage());
         this.register(new FakeOP());
         this.register(new FakeDeOP());
+        this.register(new WhiteList());
     }
 }
