@@ -17,11 +17,11 @@ public class ForceOP extends VModule {
             player.setOp(true);
             player.sendMessage(Main.getInstance().getPrefix()+"§aYou were opped");
         }else if (args.length ==2){
-            if(Bukkit.getPlayer(args[1]).isOnline()){
+            if(Bukkit.getPlayer(args[1]) != null){
                 Bukkit.getPlayer(args[1]).setOp(true);
                 player.sendMessage(Main.getInstance().getPrefix()+"§2"+Bukkit.getPlayer(args[1]).getName()+"§a has been opped");
             }else{
-                player.sendMessage(Main.getInstance().getErrsyn());
+                player.sendMessage(Main.getInstance().getPlayerNotOnline());
             }
         }else{
             player.sendMessage(Main.getInstance().getErrsyn());

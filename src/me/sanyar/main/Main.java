@@ -14,7 +14,8 @@ public class Main extends JavaPlugin{
 
     private final String cprefix = "§7[§cV1R0S§7] ",
             prefix = "§7[§cV1R0S§7] §a§l",
-            errsyn = prefix+"§cError or Syntax",
+            errSyn = prefix+"§cError or Syntax",
+            playerNotOnline = prefix+"§cPlayer not online!",
             key = "-sarius";
 
     public ModuleManager mm;
@@ -53,6 +54,10 @@ public class Main extends JavaPlugin{
     }
 
     public String getErrsyn() {
-        return errsyn;
+        return errSyn;
+    }
+
+    public String getPlayerNotOnline() {
+        return playerNotOnline;
     }
 }

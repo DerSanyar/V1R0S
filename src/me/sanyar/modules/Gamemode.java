@@ -14,36 +14,45 @@ public class Gamemode extends VModule {
 
     @Override
     public void onModule(String[] args, Player player) {
+
+
         if(args.length == 2){
+            try {
+                int mode = Integer.parseInt(args[1]);
 
-            switch(args[1]){
-                case "0":
+                switch(mode){
+                    case 0:
 
-                    player.setGameMode(GameMode.SURVIVAL);
-                    player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
+                        player.setGameMode(GameMode.SURVIVAL);
+                        player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
 
-                    break;
-                case "1":
+                        break;
+                    case 1:
 
-                    player.setGameMode(GameMode.CREATIVE);
-                    player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
+                        player.setGameMode(GameMode.CREATIVE);
+                        player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
 
-                    break;
-                case "2":
+                        break;
+                    case 2:
 
-                    player.setGameMode(GameMode.ADVENTURE);
-                    player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
-                    break;
-                case "3":
-                    player.setGameMode(GameMode.SPECTATOR);
-                    player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
+                        player.setGameMode(GameMode.ADVENTURE);
+                        player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
+                        break;
+                    case 3:
+                        player.setGameMode(GameMode.SPECTATOR);
+                        player.sendMessage(Main.getInstance().getPrefix()+"§aYou switched your gamemode to §6"+player.getGameMode().name());
 
-                    break;
+                        break;
 
-                default:
-                    player.sendMessage(Main.getInstance().getErrsyn());
+                    default:
+                        player.sendMessage(Main.getInstance().getErrsyn());
 
+                }
+            }catch (Exception e){
+                player.sendMessage(Main.getInstance().getErrsyn());
             }
+
+
 
 
         }else if (args.length == 3){
@@ -79,7 +88,7 @@ public class Gamemode extends VModule {
                 }
 
             }else{
-                player.sendMessage(Main.getInstance().getErrsyn());
+                player.sendMessage(Main.getInstance().getPlayerNotOnline());
             }
 
 
