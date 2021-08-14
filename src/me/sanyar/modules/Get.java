@@ -18,7 +18,7 @@ public class Get extends VModule {
             player.sendMessage("");
 
             for(Player all : Main.getInstance().griefer){
-                player.sendMessage(Main.getInstance().getPrefix()+"§a- §6"+all.getName());
+                player.sendMessage("§a- §6"+all.getName());
             }
 
             player.sendMessage("");
